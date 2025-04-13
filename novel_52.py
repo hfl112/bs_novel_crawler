@@ -89,7 +89,7 @@ for i in links:
 
 
 replace_character = {'Tips:看好看的小说，就来52书库呀~www.52shuku.vip':''}
-with open('/Users/funanhe/Downloads/'+book_name+'-'+author+'.txt', "w") as f:
+with open('~/Downloads/'+book_name+'-'+author+'.txt', "w") as f:
     for i in range(1, len(page_text.keys()) + 1):
         print(i)
         
