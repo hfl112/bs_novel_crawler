@@ -84,7 +84,7 @@ for i in links:
 # In[ ]:
 
 
-with open('/Users/funanhe/Downloads/'+book_name+'-'+author+'.txt', "w") as f:
+with open('~/Downloads/'+book_name+'-'+author+'.txt', "w") as f:
     for i in range(1, len(page_text.keys()) + 1):
         print(i)
         new_text = page_text[i]
