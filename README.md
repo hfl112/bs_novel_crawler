@@ -1,6 +1,6 @@
-# Novel Crawler System & Gemini Skill
+# Novel Crawler Skill
 
-这是一个高度集成、稳健且具备反爬虫能力的小说抓取系统。它已经从一组零散的脚本进化为一个统一的框架，并作为 **Gemini CLI Skill** 集成到了你的工作流中。
+这是一个高度集成、稳健且具备反爬虫能力的小说抓取系统。
 
 ## 🚀 项目亮点
 
@@ -33,14 +33,12 @@
 python3 main.py [小说主页URL]
 ```
 
-### 2. 作为 Gemini Skill 使用 (推荐)
-你可以在 Gemini CLI 中随时输入：
+### 2. 作为Skill 使用 (推荐)
 > "帮我下载这部小说: https://www.xbanxia.cc/books/187646.html"
 
 Gemini 会自动调用已安装的 `novel-crawler` 技能在后台运行。
 
 ## 📂 文件存放
-- **代码位置**: `/Users/funanhe/Documents/0.MyCode/novel/`
 - **Skill 位置**: `~/.gemini/skills/novel-crawler/`
 - **抓取结果**: 所有 `.txt` 文件默认保存至 `~/Downloads/`。
 
