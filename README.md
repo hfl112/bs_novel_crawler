@@ -34,7 +34,7 @@ python3 main.py [小说主页URL]
 ```
 
 ### 2. 作为Skill 使用 (推荐)
-> "帮我下载这部小说: https://www.xbanxia.cc/books/187646.html"
+> "帮我下载这部小说: https://www.xbanxia.cc/books/342243.html"
 
 Gemini 会自动调用已安装的 `novel-crawler` 技能在后台运行。
 
