@@ -1,7 +1,13 @@
 import sys
+import os
 import re
 from urllib.parse import urljoin
-from crawl_utils import fetch_page, get_meta_info, anti_crawling_pause, save_to_file, Timer
+
+try:
+    from crawl_utils import fetch_page, get_meta_info, anti_crawling_pause, save_to_file, Timer
+except ImportError:
+    sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+    from crawl_utils import fetch_page, get_meta_info, anti_crawling_pause, save_to_file, Timer
 
 def extract_content(soup):
     """半夏小说特有的内容提取逻辑"""
@@ -15,7 +21,7 @@ def extract_content(soup):
 
 def main():
     if len(sys.argv) < 2:
-        print("使用方法: python3 novel_banxia.py [URL]")
+        print("使用方法: python3 -m parsers.novel_banxia [URL]")
         return
 
     timer = Timer()
